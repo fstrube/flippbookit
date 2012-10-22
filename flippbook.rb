@@ -1,5 +1,5 @@
 require "sinatra"
-require "sinatra/reloader" if development?
+require "sinatra/reloader" if settings.environment == :development
 require "aws/s3"
 
 # Setup Amazon S3 using Heroku config
