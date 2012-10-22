@@ -1,0 +1,19 @@
+!!! XML
+!!! 5
+%html
+  %head
+    %title= 'flippbook.it'
+    %link{:href => '/css/bootstrap.min.css', :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => '/css/jasny-bootstrap.min.css', :rel => 'stylesheet', :type => 'text/css'}
+    / %link{:href => '/css/fileuploader.css', :rel => 'stylesheet', :type => 'text/css'}
+    / %link{:href => '/css/uploadify.css', :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => '/css/flippbookit.css', :rel => 'stylesheet', :type => 'text/css'}
+  %body
+    .container#main
+      =yield
+    %script{:src => '//code.jquery.com/jquery-latest.js'}
+    %script{:src => '/js/bootstrap.min.js'}
+    / %script{:src => '/js/uploadify.min.js'}
+    / %script{:src => '/js/fileuploader.min.js'}
+    %script{:src => '/js/bootstrap-fileupload.js'}
+    %script{:src => '/js/flippbookit.js'}

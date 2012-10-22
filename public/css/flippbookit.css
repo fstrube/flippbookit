@@ -1,0 +1,8 @@
+#main {
+  text-align: center;
+}
+
+.loading {
+  background: url(/img/loading.gif) center center no-repeat;
+  padding:10px;
+}

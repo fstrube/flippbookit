@@ -1,0 +1,26 @@
+.modal
+  %form.form-horizontal.modal-form{:enctype=>"multipart/form-data", :method => 'post'}
+    .modal-header
+      %h1= 'FlippBook.it'
+    .modal-body
+      .control-group
+        %input.input-block-level{:name => 'url', :placeholder => 'Enter a URL', :type => 'text'}
+      %p.or= 'or'
+      .control-group
+        .fileupload.fileupload-new{:'data-provides' => 'fileupload'}
+          %div.fileupload-preview.thumbnail.hide{:style => 'max-height: 150px'}
+          %div
+            %span.btn.btn-file
+              %span.fileupload-new
+                Upload a File
+                %span.add-on.icon-upload
+              %span.fileupload-exists= 'Change'
+              %input{:name => 'image', :type => 'file'}
+            %a.btn.fileupload-exists{:'data-dismiss' => 'fileupload', :href => '#', :style => 'float: none'}
+              Remove
+              %span.add-on.icon-remove
+    .modal-footer
+      %button.btn.btn-primary.btn-flippbookit
+        FlippBook.it
+        %i.icon-chevron-right.icon-white
+.modal-backdrop
